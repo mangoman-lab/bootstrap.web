@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap-web</title>
+    <!-- ✅ Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="#">
+          <img src="whitelogo.svg" G
+          height="85vh"
+          width="ms-auto" />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu items -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#programs">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#trainers">Trainers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="btn btn-danger btn-sm" href="#contact">Join Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO / CAROUSEL SECTION -->
+    <header id="home">
+      <div
+        id="heroCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active position-relative">
+            <img
+              src="slider1.jpg"
+              class="d-block w-100"
+              alt="Gym Image 1"
+              style="height: 100vh; object-fit: cover"
+            />
+            <div
+              class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100"
+            >
+              <h1 class="display-4 fw-bold text-white mb-3">
+                Transform Your Body
+              </h1>
+              <p class="lead text-light mb-4">
+                Modern Equipment • Personal Training • Nutrition Plans
+              </p>
+              <a href="#programs" class="btn btn-lg btn-outline-light me-2"
+                >Our Programs</a
+              >
+              <a href="#contact" class="btn btn-lg btn-danger">Join Now</a>
+            </div>
+            <div class="overlay"></div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item position-relative">
+            <img
+              src="slider2.jpg"
+              class="d-block w-100"
+              alt="Gym Image 2"
+              style="height: 100vh; object-fit: cover"
+            />
+            <div
+              class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100"
+            >
+              <h1 class="display-4 fw-bold text-white mb-3">
+                Push Harder Than Yesterday
+              </h1>
+              <p class="lead text-light mb-4">
+                Build strength, speed, and stamina
+              </p>
+              <a href="#programs" class="btn btn-lg btn-outline-light me-2"
+                >Explore</a
+              >
+              <a href="#contact" class="btn btn-lg btn-danger">Join Now</a>
+            </div>
+            <div class="overlay"></div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item position-relative">
+            <img
+              src="slider3.jpg"
+              class="d-block w-100"
+              alt="Gym Image 3"
+              style="height: 100vh; object-fit: cover"
+            />
+            <div
+              class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100"
+            >
+              <h1 class="display-4 fw-bold text-white mb-3">
+                Strong Mind, Strong Body
+              </h1>
+              <p class="lead text-light mb-4">
+                Join Pakistan’s top fitness community
+              </p>
+              <a href="#programs" class="btn btn-lg btn-outline-light me-2"
+                >View Plans</a
+              >
+              <a href="#contact" class="btn btn-lg btn-danger">Join Now</a>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+
+        <!-- Prev / Next controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ABOUT / FEATURES -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3">Why Choose Gym Khana ?</h2>
+        <p class="text-muted mb-4">
+          Expert coaches, modern machines, flexible timings and tailored
+          programs.
+        </p>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon mb-3">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <h5 class="card-title">Modern Equipment</h5>
+                <p class="card-text text-muted">
+                  Top quality machines and free weights for all levels.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon mb-3">
+                  <i class="fa-solid fa-heart-circle-bolt"></i>
+                </div>
+                <h5 class="card-title">Expert Trainers</h5>
+                <p class="card-text text-muted">
+                  Certified trainers with personalized workout plans.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 text-center">
+              <div class="card-body">
+                <div class="feature-icon mb-3">
+                  <i class="fa-brands fa-nutritionix"></i>
+                </div>
+                <h5 class="card-title">Nutrition Guidance</h5>
+                <p class="card-text text-muted">
+                  Diet plans to match your fitness goals and lifestyle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="py-5 bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold m-0">Our Programs</h2>
+          <a href="#contact" class="btn btn-outline-primary">Get Started</a>
+        </div>
+
+        <div class="row g-4">
+          <!-- Program Card 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="weightlifting.jpg"
+                class="card-img-top"
+                alt="Strength"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Strength Training</h5>
+                <p class="card-text text-muted">
+                  Build muscle with progressive routines.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">₨ 4500 / month</span>
+                  <a href="#contact" class="btn btn-sm btn-primary">Join</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program Card 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="cardio.jpg" class="card-img-top" alt="Cardio" />
+              <div class="card-body">
+                <h5 class="card-title">Cardio & Endurance</h5>
+                <p class="card-text text-muted">
+                  Improve stamina with HIIT & circuits.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">₨ 3500 / month</span>
+                  <a href="#contact" class="btn btn-sm btn-primary">Join</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program Card 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="yoga.jpg" class="card-img-top" alt="Flexibility" />
+              <div class="card-body">
+                <h5 class="card-title">Flexibility & Recovery</h5>
+                <p class="card-text text-muted">
+                  Mobility and recovery sessions for long-term health.
+                </p>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">₨ 3000 / month</span>
+                  <a href="#contact" class="btn btn-sm btn-primary">Join</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINERS -->
+    <section id="trainers" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3">Meet Our Trainers</h2>
+        <p class="text-muted mb-4">
+          Certified professionals who will guide you every step of the way.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="trainer1.jpg"
+                class="card-img-top rounded-circle mx-auto mt-4"
+                style="width: 150px; height: 150px; object-fit: cover"
+                alt="Trainer 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ahmed Khan</h5>
+                <p class="text-muted">
+                  Strength & conditioning coach. 8 years experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="trainer2.jpg"
+                class="card-img-top rounded-circle mx-auto mt-4"
+                style="width: 150px; height: 150px; object-fit: cover"
+                alt="Trainer 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sara Ali</h5>
+                <p class="text-muted">Personal trainer & nutrition expert.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                src="trainer3.jpg"
+                class="card-img-top rounded-circle mx-auto mt-4"
+                style="width: 150px; height: 150px; object-fit: cover"
+                alt="Trainer 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bilal Shah</h5>
+                <p class="text-muted">Mobility & recovery specialist.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / JOIN FORM -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Join Gym Khana</h2>
+            <p class="text-muted">
+              Fill the form and our coach will contact you within 24 hours.
+            </p>
+
+            <form class="mt-4" id="joinForm" action="#" method="post">
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone / WhatsApp</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="phone"
+                  placeholder="03xx-xxxxxxx"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Program Interested</label>
+                <select class="form-select" name="program">
+                  <option>Strength Training</option>
+                  <option>Cardio & Endurance</option>
+                  <option>Flexibility & Recovery</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-danger">
+                Submit & Contact Me
+              </button>
+            </form>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <img
+              src="Gymlogo.png"
+              class="img-fluid rounded-4 shadow"
+              alt="gym"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 text-md-start mb-2 mb-md-0">
+            <p class="mb-0">
+              &copy; <span id="year"></span> Beast Gym • All rights reserved
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <small class="text-muted">Designed by Arham</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
